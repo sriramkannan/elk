@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/sriramkannan/elk/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This page is to help kickstart one of the basic needs of many technology enterprises - to be the eyes and ears of logs. Most of major programming languages are written with log statements for debugging purposes in a non-development environment. These log messages are primary used or viewed only when there is an issue or to find a story - example: what all pages did a user visit in a given day. To see that information, one has to open the log file residing in a server (in an ocean of servers) or pull it from a central logging server if it was setup in such fashion. A non-technology person cannot effectively view a log and tell a story. To solve that we need something visual. Here's one way to make the logs as visual as possible using all open source technologies - Elasticsearch, logstash and Kibana - in short known widely as ELK stack. 
 
 ### Markdown
 
