@@ -20,25 +20,106 @@
   </head>
 
 <body>
-<h2>Introduction</h2>
-<p>This page is to help kickstart one of the basic needs of many technology enterprises - to be the eyes and ears of logs. Most of major programming languages are written with log statements for debugging purposes in a non-development environment. These log messages are primary used or viewed only when there is an issue or to find a story - example: what all pages did a user visit in a given day. To see that information, one has to open the log file residing in a server (in an ocean of servers) or pull it from a central logging server if it was setup in such fashion. A non-technology person cannot effectively view a log and tell a story. To solve that we need something visual. Here's one way to make the logs as visual as possible using all open source technologies - Elasticsearch, logstash and Kibana - in short known widely as ELK stack. </p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="navbar-header">
 
-<h3>Elasticsearch</h3>
-<p>Elasticsearch is a search engine written on top of Lucene. It's widely regarded as a distriuted, multi-tenant, NoSql database that stores document based data in JSON format. For the problem we have at hand, we are going to use Elasticsearch for storing parsed log data in JSON format. </p>
-  
-  <h3>
-    Logstash
-  </h3>
-  <p>
-    Logstash is a server-side data processing tool that can take data from multiple sources and can parse/process then and send it out to multiple targets. 
-    Example: log files can be sent from multiple servers to logstash either as a file or on a tcp/udp stream which will process (parsed into JSON) and sent out to a central logging server and/or Elasticsearch. 
-  </p>
-  
-  <h3>
-    Kibana
-  </h3>
-  <p>
-    Kibana is a front end dashboard UI that can represent data in multiple formats like pie chart, table, bar graphs, time-series graphs etc. The data requested from Kibana is in the form of a REST API call to Elasticsearch the input of which is provided and configured on the UI. 
-  </p>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button> <a class="navbar-brand" href="#">Brand</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Link</a>
+              </li>
+              <li>
+                <a href="#">Link</a>
+              </li>
+              <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Action</a>
+                  </li>
+                  <li>
+                    <a href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li class="divider">
+                  </li>
+                  <li>
+                    <a href="#">Separated link</a>
+                  </li>
+                  <li class="divider">
+                  </li>
+                  <li>
+                    <a href="#">One more separated link</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" />
+              </div> 
+              <button type="submit" class="btn btn-default">
+                Submit
+              </button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">Link</a>
+              </li>
+              <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Action</a>
+                  </li>
+                  <li>
+                    <a href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li class="divider">
+                  </li>
+                  <li>
+                    <a href="#">Separated link</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+        <h2>Introduction</h2>
+        <p>This page is to help kickstart one of the basic needs of many technology enterprises - to be the eyes and ears of logs. Most of major programming languages are written with log statements for debugging purposes in a non-development environment. These log messages are primary used or viewed only when there is an issue or to find a story - example: what all pages did a user visit in a given day. To see that information, one has to open the log file residing in a server (in an ocean of servers) or pull it from a central logging server if it was setup in such fashion. A non-technology person cannot effectively view a log and tell a story. To solve that we need something visual. Here's one way to make the logs as visual as possible using all open source technologies - Elasticsearch, logstash and Kibana - in short known widely as ELK stack. </p>
+
+        <h3>Elasticsearch</h3>
+        <p>Elasticsearch is a search engine written on top of Lucene. It's widely regarded as a distriuted, multi-tenant, NoSql database that stores document based data in JSON format. For the problem we have at hand, we are going to use Elasticsearch for storing parsed log data in JSON format. </p>
+
+        <h3>
+          Logstash
+        </h3>
+        <p>
+          Logstash is a server-side data processing tool that can take data from multiple sources and can parse/process then and send it out to multiple targets. 
+          Example: log files can be sent from multiple servers to logstash either as a file or on a tcp/udp stream which will process (parsed into JSON) and sent out to a central logging server and/or Elasticsearch. 
+        </p>
+        <h3>
+          Kibana
+        </h3>
+        <p>
+          Kibana is a front end dashboard UI that can represent data in multiple formats like pie chart, table, bar graphs, time-series graphs etc. The data requested from Kibana is in the form of a REST API call to Elasticsearch the input of which is provided and configured on the UI. 
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
