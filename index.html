@@ -102,21 +102,58 @@
         <h2>Introduction</h2>
         <p>This page is to help kickstart one of the basic needs of many technology enterprises - to be the eyes and ears of logs. Most of major programming languages are written with log statements for debugging purposes in a non-development environment. These log messages are primary used or viewed only when there is an issue or to find a story - example: what all pages did a user visit in a given day. To see that information, one has to open the log file residing in a server (in an ocean of servers) or pull it from a central logging server if it was setup in such fashion. A non-technology person cannot effectively view a log and tell a story. To solve that we need something visual. Here's one way to make the logs as visual as possible using all open source technologies - Elasticsearch, logstash and Kibana - in short known widely as ELK stack. </p>
 
-        <h3>Elasticsearch</h3>
-        <p>Elasticsearch is a search engine written on top of Lucene. It's widely regarded as a distriuted, multi-tenant, NoSql database that stores document based data in JSON format. For the problem we have at hand, we are going to use Elasticsearch for storing parsed log data in JSON format. </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  Elasticsearch
+                </h3>
+              </div>
+              <div class="panel-body">
+                Elasticsearch is a search engine written on top of Lucene. It's widely regarded as a distriuted, multi-tenant, NoSql database that stores document based data in JSON format. For the problem we have at hand, we are going to use Elasticsearch for storing parsed log data in JSON format. 
+              </div>
+              <div class="panel-footer">
+                <a href="https://www.elastic.co/products/elasticsearch">Official Elasticsearch Page</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  Logstash
+                </h3>
+              </div>
+              <div class="panel-body">
+                Logstash is a server-side data processing tool that can take data from multiple sources and can parse/process then and send it out to multiple targets. 
+                <br>Example: log files can be sent from multiple servers to logstash either as a file or on a tcp/udp stream which will process (parsed into JSON) and sent out to a central logging server and/or Elasticsearch. 
+              </div>
+              <div class="panel-footer">
+                <a href="https://www.elastic.co/products/logstash">Official Logstash Page</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  Kibana
+                </h3>
+              </div>
+              <div class="panel-body">
+                Kibana is a front end dashboard UI that can represent data in multiple formats like pie chart, table, bar graphs, time-series graphs etc. The data requested from Kibana is in the form of a REST API call to Elasticsearch the input of which is provided and configured on the UI. 
+              </div>
+              <div class="panel-footer">
+                <a href="https://www.elastic.co/products/kibana">Official Kibana Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
 
-        <h3>
-          Logstash
-        </h3>
-        <p>
-          Logstash is a server-side data processing tool that can take data from multiple sources and can parse/process then and send it out to multiple targets. 
-          Example: log files can be sent from multiple servers to logstash either as a file or on a tcp/udp stream which will process (parsed into JSON) and sent out to a central logging server and/or Elasticsearch. 
-        </p>
-        <h3>
-          Kibana
-        </h3>
-        <p>
-          Kibana is a front end dashboard UI that can represent data in multiple formats like pie chart, table, bar graphs, time-series graphs etc. The data requested from Kibana is in the form of a REST API call to Elasticsearch the input of which is provided and configured on the UI. 
+          
         </p>
       </div>
     </div>
